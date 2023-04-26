@@ -25,17 +25,14 @@ function App2() {
       altText: "coffee break",
     },
   ]);
-  const [value, setValue] = React.useState("");
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!value) return;
+  const addTodo = (value) => {
     const newTodos = [
       ...todos,
       { text: value, iscomplete: false, imgSrc: "", altText: value },
     ];
     setTodos(newTodos);
-    setValue("");
   };
+
   const removeTodo = (e) => {
     let index = e.target.id;
     let removeTodos = [...todos];
@@ -62,14 +59,17 @@ function App2() {
           )}
         </div>
       ))}
-      <form onSubmit={handleSubmit}>
+      {
+        <ToDoForm addTodo={addTodo} />
+        /* <form onSubmit={handleSubmit}>
         <input
           type="text"
           value={value}
           placeholder="Add Todo..."
           onChange={(e) => setValue(e.target.value)}
         />
-      </form>
+      </form> */
+      }
     </>
   );
 }
