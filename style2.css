@@ -1,0 +1,81 @@
+body {
+  margin: auto;
+  font-family: "Charmonman", cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 50%;
+}
+.todoImg {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  margin: auto;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+h1 {
+  background: #9384d1;
+  color: aliceblue;
+  font-size: 3rem;
+  padding: 10px 20px;
+  font-weight: bolder;
+}
+.app {
+  background: #209cee;
+  padding: 30px;
+  height: 100vh;
+}
+
+.todo-list {
+  background: #e8e8e8;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.todo {
+  background: #c9a7eb;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+
+  font-size: 30px;
+  margin-bottom: 6px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: none;
+  padding: 1rem;
+  height: 2.25em;
+  font-size: 24px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
